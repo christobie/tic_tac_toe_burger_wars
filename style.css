@@ -1,0 +1,13 @@
+/* Tic-Tac-Toe Project by Chris Tobeck, WDI-BOS-07 at General Assembly. */
+
+.square {
+  height: 120px;
+  width: 120px;
+  background-color: #3399ff;
+  border: 1px solid black;
+  float:left;
+}
+
+#sqThree, #sqSix {
+  clear: both;
+}
