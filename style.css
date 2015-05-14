@@ -1,14 +1,14 @@
 /*   Tic-Tac-Toe Project by Chris Tobeck, WDI-BOS-07 at General Assembly.   */
 
-
 body {
-  background: #CCCCCC;
+  font-family: Tahoma, Verdana, sans-serif;
+  background-image: url("images/background-02-b.jpg");
 }
 
 #scoreboard {
   margin: 0 auto;
   display: table;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 #board {
@@ -18,12 +18,22 @@ body {
   border-color: #000000;
 }
 
+#reset {
+  margin: 0 auto;
+  display: table;
+}
+
+#resetbutton {
+  margin: 0 auto;
+  display: table;
+}
+
 .square {
 
   height: 120px;
   width: 120px;
-  background-color: #3399ff;
-  border: 1px solid black;
+  background-color: #FF4D4D;
+  border: 5px solid black;
   text-align: center;
   vertical-align: middle;
   float:left;
