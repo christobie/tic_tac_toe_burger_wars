@@ -28,7 +28,6 @@ body {
   vertical-align: middle;
   float:left;
 }
-
-#sqThree, #sqSix {
+.row{
   clear: both;
 }
