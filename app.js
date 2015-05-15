@@ -24,7 +24,7 @@ $(document).ready(function(){
 
   // Setup reset button handler
   $("#reset").on("click",resetBoard);
-  $("#reset").html('Reset The Board');
+  $("#reset").html('Order Again!');
 
   // When user clicks on a square, make square X or O.
   // Identifying all elements with class "square."
