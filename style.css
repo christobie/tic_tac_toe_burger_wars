@@ -5,6 +5,9 @@ body {
   background-image: url("images/background-02-b.jpg");
 }
 
+body, a:hover {cursor: url(http://cur.cursors-4u.net/food/foo-4/foo323.cur), progress !important;
+}
+
 #scoreboard {
   margin: 0 auto;
   display: table;
