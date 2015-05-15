@@ -13,15 +13,26 @@ $(document).ready(function(){
   var board = ['', '', '', '','', '','','', '', ''];
 
   var resetBoard = function() {
-    return 1;
+    // reset the board array
+    board = ['', '', '', '','', '','','', '', ''];
+    // clear out each square's content
+    $('.square').each(function(){
+      $(this).html('');
+    });
+    winner = false;
   }
+
+  // Setup reset button handler
+  $("#reset").on("click",resetBoard);
+  $("#reset").html('Reset The Board');
 
   // When user clicks on a square, make square X or O.
   // Identifying all elements with class "square."
   // Give each of these "square element a click handler"
-  $(".square").one("click", function(event){
+  $(".square").on("click", function(event){
 
-    if (!winner) {
+    // if no one has clicked on this square AND there is no winner
+    if ($(this).html() === '' && !winner) {
       // We can get the square that was clicked by using
       // $(this)
       // Now that we have the square that was clicked we can set
@@ -59,10 +70,10 @@ $(document).ready(function(){
           (board[2] === 'O' && board[4] === 'O' && board[6] === 'O')
         ){
         winner = true;
+        alert("We have a Winner! EAT UP!");
         console.log("GAME OVER");
       }
     }
   });
 
-  $("#reset").on("click",resetBoard())
 });

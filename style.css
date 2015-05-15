@@ -21,11 +21,9 @@ body {
 #reset {
   margin: 0 auto;
   display: table;
-}
-
-#resetbutton {
-  margin: 0 auto;
-  display: table;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .square {
